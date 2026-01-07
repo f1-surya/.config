@@ -4,7 +4,7 @@
 
 * {
   font-family: "JetBrainsMono Nerd Font", monospace;
-  font-size: 12px;
+  font-size: 11px;
   min-height: 0;
   border: none;
 }
@@ -15,7 +15,7 @@
 
 window#waybar {
   background: transparent;
-  margin: 4px 14px;
+  margin: 4px 12px;
   color: #ffffff;
 }
 
@@ -45,9 +45,9 @@ tooltip {
 #battery,
 #bluetooth,
 #tray {
-  padding: 2px 8px;
-  margin: 2px 4px;
-  border-radius: 6px;
+  padding: 2px 6px;
+  margin: 2px 3px;
+  border-radius: 5px;
   /* technical, not pill */
   font-weight: 500;
   color: #ffffff;
@@ -69,6 +69,8 @@ tooltip {
 
 #workspaces button {
   color: #9ca3af;
+  padding: 1px 6px;
+  margin: 1px 2px;
 }
 
 #workspaces button.active {
@@ -184,5 +186,5 @@ tooltip {
 #tray {
   background: #23262f;
   border: 1px solid #343845;
-  padding: 2px 6px;
+  padding: 2px 5px;
 }
