@@ -1,0 +1,188 @@
+/* =====================
+   Global
+   ===================== */
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 12px;
+  min-height: 0;
+  border: none;
+}
+
+/* =====================
+   Waybar container
+   ===================== */
+
+window#waybar {
+  background: transparent;
+  margin: 4px 14px;
+  color: #ffffff;
+}
+
+/* =====================
+   Tooltips
+   ===================== */
+
+tooltip {
+  background: #0f1117;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  border: 1px solid #2a2e3a;
+}
+
+/* =====================
+   Shared island base
+   ===================== */
+
+#workspaces button,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#network,
+#battery,
+#bluetooth,
+#tray {
+  padding: 2px 8px;
+  margin: 2px 4px;
+  border-radius: 6px;
+  /* technical, not pill */
+  font-weight: 500;
+  color: #ffffff;
+
+  background: linear-gradient(180deg,
+      #2a2e38 0%,
+      #242730 100%);
+
+  border: 1px solid #3a3f4c;
+}
+
+/* =====================
+   Workspaces (grid / pit-lane style)
+   ===================== */
+
+#workspaces {
+  margin: 0 6px;
+}
+
+#workspaces button {
+  color: #9ca3af;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  border-left: 3px solid #4c8dff;
+  /* team accent */
+}
+
+#workspaces button.urgent {
+  border-left: 3px solid #eab308;
+  /* yellow flag */
+}
+
+#workspaces button:hover {
+  background: #303544;
+}
+
+/* =====================
+   Clock (timing panel)
+   ===================== */
+
+#clock {
+  border-left: 3px solid #4c8dff;
+  letter-spacing: 0.5px;
+}
+
+/* =====================
+   CPU / Memory / Temp (telemetry)
+   ===================== */
+
+#cpu {
+  border-left: 3px solid #facc15;
+  /* engine load */
+}
+
+#memory {
+  border-left: 3px solid #fb923c;
+  /* fuel / allocation */
+}
+
+#temperature {
+  border-left: 3px solid #f87171;
+  /* heat */
+}
+
+#temperature.critical {
+  background: #3a2326;
+  border-left: 3px solid #dc2626;
+  /* red flag */
+}
+
+/* =====================
+   Audio
+   ===================== */
+
+#pulseaudio {
+  border-left: 3px solid #22c55e;
+}
+
+#pulseaudio.muted {
+  background: #2b2f3a;
+  border-left: 3px solid #6b7280;
+}
+
+/* =====================
+   Network / Bluetooth (telemetry link)
+   ===================== */
+
+#network {
+  border-left: 3px solid #14b8a6;
+}
+
+#network.disconnected {
+  background: #3a2a24;
+  border-left: 3px solid #f97316;
+}
+
+#bluetooth {
+  border-left: 3px solid #60a5fa;
+}
+
+#bluetooth.connected {
+  border-left: 3px solid #22c55e;
+  /* green flag */
+}
+
+/* =====================
+   Battery (ERS)
+   ===================== */
+
+#battery {
+  border-left: 3px solid #22c55e;
+}
+
+#battery.warning {
+  border-left: 3px solid #eab308;
+}
+
+#battery.critical {
+  background: #3a2326;
+  border-left: 3px solid #dc2626;
+}
+
+#battery.charging {
+  border-left: 3px solid #38bdf8;
+  /* regen */
+}
+
+/* =====================
+   Tray
+   ===================== */
+
+#tray {
+  background: #23262f;
+  border: 1px solid #343845;
+  padding: 2px 6px;
+}

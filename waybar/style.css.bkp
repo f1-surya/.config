@@ -1,0 +1,229 @@
+/* =====================
+   Global
+   ===================== */
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 12px;
+  min-height: 0;
+  border: none;
+}
+
+/* =====================
+   Waybar container
+   ===================== */
+
+window#waybar {
+  background: transparent;
+  margin: 4px 14px;
+  color: #ffffff;
+}
+
+/* =====================
+   Tooltips
+   ===================== */
+
+tooltip {
+  background: #0f1117;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+/* =====================
+   Workspaces (left islands)
+   ===================== */
+
+#workspaces {
+  margin: 0 6px;
+}
+
+#workspaces button {
+  padding: 2px 8px;
+  margin: 2px 3px;
+  border-radius: 999px;
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+#workspaces button.active {
+  background: #4c8dff;
+  color: #ffffff;
+}
+
+#workspaces button.urgent {
+  background: #e64553;
+  color: #ffffff;
+}
+
+#workspaces button:hover {
+  background: #6a9fff;
+  color: #ffffff;
+}
+
+/* =====================
+   Shared island style
+   ===================== */
+
+#clock,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+  padding: 2px 8px;
+  /* thin */
+  margin: 2px 4px;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #ffffff;
+  /* enforce white text on right */
+}
+
+/* =====================
+   Bluetooth island
+   ===================== */
+
+#bluetooth {
+  padding: 2px 8px;
+  /* keep it thin */
+  margin: 2px 4px;
+  border-radius: 999px;
+  font-weight: 500;
+
+  background: #2f3b63;
+  /* muted pastel blue */
+  border: 1px solid #3b4a7a;
+  color: #ffffff;
+}
+
+/* Bluetooth enabled but not connected */
+#bluetooth.on {
+  background: #2f3b63;
+  border-color: #3b4a7a;
+}
+
+/* Bluetooth connected */
+#bluetooth.connected {
+  background: #2e4f6e;
+  /* slightly greener blue */
+  border-color: #3e688f;
+}
+
+/* Bluetooth disabled */
+#bluetooth.off {
+  background: #3a3d4a;
+  /* neutral grey-blue */
+  border-color: #4a4e5e;
+  color: #e6e6e6;
+}
+
+/* Attention / error state */
+#bluetooth.disabled,
+#bluetooth.error {
+  background: #5a3a42;
+  /* muted red */
+  border-color: #734c56;
+}
+
+/* =====================
+   Right-side island colors
+   Pastel + subtle borders
+   ===================== */
+
+#clock {
+  background: #2f3b63;
+  /* muted blue */
+  border: 1px solid #3b4a7a;
+}
+
+#cpu {
+  background: #5c5234;
+  /* muted yellow */
+  border: 1px solid #726742;
+}
+
+#memory {
+  background: #5e4633;
+  /* muted orange */
+  border: 1px solid #775a41;
+}
+
+#temperature {
+  background: #5a3a42;
+  /* muted red */
+  border: 1px solid #734c56;
+}
+
+#temperature.critical {
+  background: #6b2f36;
+  border: 1px solid #8a3c45;
+}
+
+/* Audio */
+
+#pulseaudio {
+  background: #2f5646;
+  /* muted green */
+  border: 1px solid #3e705b;
+}
+
+#pulseaudio.muted {
+  background: #444854;
+  border: 1px solid #5a5f6d;
+}
+
+/* Network */
+
+#network {
+  background: #2e5a58;
+  /* muted teal */
+  border: 1px solid #3c7471;
+}
+
+#network.disconnected {
+  background: #5a3d35;
+  border: 1px solid #744f45;
+}
+
+/* Battery */
+
+#battery {
+  background: #2f5a3e;
+  /* muted green */
+  border: 1px solid #3d7350;
+}
+
+#battery.warning {
+  background: #5f4e2f;
+  border: 1px solid #78643d;
+}
+
+#battery.critical {
+  background: #6b2f36;
+  border: 1px solid #8a3c45;
+}
+
+#battery.charging {
+  background: #2e5a56;
+  border: 1px solid #3c7470;
+}
+
+/* Tray */
+
+#tray {
+  background: #2a2e3a;
+  border: 1px solid #3a3f50;
+  padding: 2px 6px;
+}
+
+/* =====================
+   Tray
+   ===================== */
+
+#tray {
+  background: #2b2f3a;
+  padding: 2px 6px;
+}
