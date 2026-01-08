@@ -49,7 +49,8 @@
       "disabled": "!", // disabled
       "connected": "" // connected device
     },
-    "format-connected": "{icon} {controller_alias}",
+    "format-connected": "{icon} {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     "on-click": "blueman-manager", // launch blueman GUI
     "tooltip": true,
     "tooltip-format-connected": "{device_alias}"

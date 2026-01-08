@@ -1,0 +1,106 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+# =====================
+# Layout
+# =====================
+
+format = """
+[](fg:rb_blue)\
+$username\
+[](fg:rb_blue bg:rb_red)\
+$directory\
+[](fg:rb_red bg:rb_blue2)\
+$git_branch\
+$git_status\
+[](fg:rb_blue2 bg:rb_gray) 
+"""
+
+add_newline = false
+
+# =====================
+# Red Bull Palette
+# =====================
+
+palette = "redbull"
+
+[palettes.redbull]
+rb_blue   = "#0A1A2F"   # Red Bull navy
+rb_blue2  = "#1E41FF"   # Accent blue
+rb_red    = "#C8102E"   # Racing red
+rb_yellow = "#FFD100"   # Timing yellow
+rb_white  = "#FFFFFF"
+rb_gray   = "#2B2F3A"
+
+# =====================
+# Modules
+# =====================
+
+[os.symbols]
+Linux = ""
+Arch = "󰣇"
+Ubuntu = "󰕈"
+Fedora = "󰣛"
+
+[username]
+show_always = true
+style_user = "bg:rb_blue fg:rb_white"
+style_root = "bg:rb_red fg:rb_white"
+format = "[ $user ]($style)"
+
+[directory]
+truncate_to_repo = false
+truncation_length = 0
+style = "bg:rb_red fg:rb_white"
+format = "[ $path ]($style)"
+
+[git_branch]
+symbol = ""
+style = "bg:rb_blue2 fg:rb_white"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:rb_blue2 fg:rb_yellow"
+format = "[ $all_status ]($style)"
+
+[nodejs]
+symbol = "⬢"
+style = "bg:rb_gray fg:rb_white"
+format = "[ $symbol $version ]($style)"
+
+[golang]
+symbol = "🐹"
+style = "bg:rb_gray fg:rb_white"
+format = "[ $symbol $version ]($style)"
+
+[cmd_duration]
+min_time = 300
+style = "bg:rb_blue fg:rb_yellow"
+format = "[ ⏱ $duration ]($style)"
+
+[line_break]
+disabled = false
+
+# =====================
+# Disable clutter
+# =====================
+
+[package]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[python]
+disabled = true
+
+[java]
+disabled = true
+
+[c]
+disabled = true
+
+[cpp]
+disabled = true
+
+[rust]
+disabled = true
