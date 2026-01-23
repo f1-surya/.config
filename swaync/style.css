@@ -1,0 +1,135 @@
+/* =====================
+   Global
+   ===================== */
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 11px;
+  border: none;
+  box-shadow: none;
+}
+
+/* =====================
+   Notification container
+   ===================== */
+
+.notification {
+  background: linear-gradient(180deg,
+      #2a2e38 0%,
+      #242730 100%);
+  color: #ffffff;
+
+  margin: 6px;
+  padding: 6px 8px;
+
+  border-radius: 6px;
+  border: 1px solid #3a3f4c;
+
+  /* telemetry accent */
+  border-left: 3px solid #4c8dff;
+}
+
+/* =====================
+   Notification states
+   ===================== */
+
+/* Normal info */
+.notification.normal {
+  border-left-color: #4c8dff;
+  /* timing blue */
+}
+
+/* Low priority */
+.notification.low {
+  border-left-color: #6b7280;
+  /* grey flag */
+}
+
+/* Critical / urgent */
+.notification.critical {
+  border-left-color: #dc2626;
+  /* red flag */
+  background: #3a2326;
+}
+
+/* =====================
+   App icon
+   ===================== */
+
+.notification .image {
+  margin-right: 8px;
+}
+
+/* =====================
+   Title (bold, compact)
+   ===================== */
+
+.notification .summary {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+}
+
+/* =====================
+   Body text
+   ===================== */
+
+.notification .body {
+  color: #d1d5db;
+  line-height: 1.2;
+}
+
+/* =====================
+   Time (telemetry corner)
+   ===================== */
+
+.notification .time {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+/* =====================
+   Action buttons
+   ===================== */
+
+.notification .actions button {
+  background: #2b2f3a;
+  color: #ffffff;
+
+  border-radius: 4px;
+  border: 1px solid #3a3f4c;
+
+  padding: 2px 6px;
+  margin-right: 4px;
+}
+
+.notification .actions button:hover {
+  background: #303544;
+}
+
+/* =====================
+   Control center
+   ===================== */
+
+.control-center {
+  background: #0f1117;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* =====================
+   Control center notification
+   ===================== */
+
+.control-center .notification {
+  margin: 4px 0;
+}
+
+.notification {
+  background-image:
+    repeating-linear-gradient(90deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 1px,
+      transparent 4px);
+}
