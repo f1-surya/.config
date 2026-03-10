@@ -1,0 +1,6 @@
+[Unit]
+Description=Reminder notification
+
+[Service]
+Type=oneshot
+ExecStart=/home/bala/.local/bin/reminder.sh
