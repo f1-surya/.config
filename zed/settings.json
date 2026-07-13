@@ -7,32 +7,88 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "title_bar": {
+    "show_menus": false,
+    "show_onboarding_banner": false,
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+  "tabs": {
+    "show_close_button": "hover"
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+  },
+  "window_decorations": "server",
+  "edit_predictions": {
+    "provider": "zed",
+  },
+  "show_edit_predictions": false,
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "project_panel": {
-    "dock": "right"
+    "button": true,
+    "dock": "right",
   },
   "tab_size": 2,
   "vim": {
     "highlight_on_yank_duration": 210,
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
   "which_key": {
-    "enabled": true
+    "enabled": true,
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 500
-    }
+      "milliseconds": 500,
+    },
   },
   "ui_font_family": ".ZedMono",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "vim_mode": true,
-  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "icon_theme": {
+    "mode": "system",
+    "light": "JetBrains New UI Icons (Dark)",
+    "dark": "JetBrains New UI Icons (Dark)"
+  },
   "base_keymap": "JetBrains",
   "ui_font_size": 14,
   "buffer_font_size": 12.5,
   "theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "Tokyo Night Light",
-    "dark": "One Dark",
+    "dark": "Carbonfox",
+  },
+  "lsp": {
+    "oxfmt": {
+      "initialization_options": {
+        "settings": {
+          "fmt.configPath": null,
+        },
+      },
+    },
+  },
+  "languages": {
+    "Svelte": {
+      "format_on_save": "on",
+      "prettier": { "allowed": false },
+      "formatter": { "language_server": { "name": "oxfmt" } },
+    },
   },
 }

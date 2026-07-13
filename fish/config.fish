@@ -24,9 +24,10 @@ test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
 
 # pnpm
 set -gx PNPM_HOME "/home/surya/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+    set -gx PATH "$PNPM_HOME/bin" $PATH
 end
 # pnpm end
 
 alias po='pnpm'
+alias op="opencode"
