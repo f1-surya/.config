@@ -9,6 +9,7 @@ return {
         typescriptreact = { "biome" },
         json = { "biome" },
         jsonc = { "biome" },
+        sql = { "pg_format" },
       },
     },
   },
