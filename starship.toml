@@ -5,14 +5,13 @@
 # =====================
 
 format = """
-[](fg:rb_blue)\
-$username\
-[](fg:rb_blue bg:rb_red)\
+(fg:rb_blue bg:rb_red)\
 $directory\
-[](fg:rb_red bg:rb_blue2)\
+[](fg:rb_red bg:rb_blue)\
+(fg:rb_red bg:rb_blue)\
 $git_branch\
 $git_status\
-[](fg:rb_blue2 bg:rb_gray) 
+[](fg:rb_blue) 
 """
 
 add_newline = false
@@ -25,7 +24,6 @@ palette = "redbull"
 
 [palettes.redbull]
 rb_blue   = "#0A1A2F"   # Red Bull navy
-rb_blue2  = "#1E41FF"   # Accent blue
 rb_red    = "#C8102E"   # Racing red
 rb_yellow = "#FFD100"   # Timing yellow
 rb_white  = "#FFFFFF"
@@ -55,11 +53,11 @@ format = "[ $path ]($style)"
 
 [git_branch]
 symbol = ""
-style = "bg:rb_blue2 fg:rb_white"
+style = "bg:rb_blue fg:rb_white"
 format = "[ $symbol $branch ]($style)"
 
 [git_status]
-style = "bg:rb_blue2 fg:rb_yellow"
+style = "bg:rb_blue fg:rb_yellow"
 format = "[ $all_status ]($style)"
 
 [nodejs]
